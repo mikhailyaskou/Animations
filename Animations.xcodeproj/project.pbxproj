@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		985AF60E1F923B0F008B5F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985AF60D1F923B0F008B5F25 /* AppDelegate.swift */; };
-		985AF6101F923B0F008B5F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985AF60F1F923B0F008B5F25 /* ViewController.swift */; };
 		985AF6131F923B0F008B5F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985AF6111F923B0F008B5F25 /* Main.storyboard */; };
 		985AF6151F923B0F008B5F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985AF6141F923B0F008B5F25 /* Assets.xcassets */; };
 		985AF6181F923B0F008B5F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 985AF6161F923B0F008B5F25 /* LaunchScreen.storyboard */; };
+		985AF6201F923E85008B5F25 /* YMAPlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985AF61F1F923E85008B5F25 /* YMAPlanetsViewController.swift */; };
+		987792851F94FFA500A800F9 /* YMARunningTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987792841F94FFA500A800F9 /* YMARunningTextViewController.swift */; };
+		987792871F95088300A800F9 /* YMAScaleCartButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987792861F95088300A800F9 /* YMAScaleCartButtonViewController.swift */; };
+		9877928B1F95146600A800F9 /* YMAAnimatedRoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9877928A1F95146600A800F9 /* YMAAnimatedRoadViewController.swift */; };
+		987B78BB1F95FF0400B8EE95 /* YMAJalousieEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987B78BA1F95FF0400B8EE95 /* YMAJalousieEffectViewController.swift */; };
+		987B78BE1F9610D600B8EE95 /* iphonex.png in Sources */ = {isa = PBXBuildFile; fileRef = 987B78BD1F95FFF100B8EE95 /* iphonex.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		985AF60A1F923B0F008B5F25 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		985AF60D1F923B0F008B5F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		985AF60F1F923B0F008B5F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		985AF6121F923B0F008B5F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		985AF6141F923B0F008B5F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		985AF6171F923B0F008B5F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		985AF6191F923B0F008B5F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		985AF61F1F923E85008B5F25 /* YMAPlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMAPlanetsViewController.swift; sourceTree = "<group>"; };
+		987792841F94FFA500A800F9 /* YMARunningTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMARunningTextViewController.swift; sourceTree = "<group>"; };
+		987792861F95088300A800F9 /* YMAScaleCartButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMAScaleCartButtonViewController.swift; sourceTree = "<group>"; };
+		9877928A1F95146600A800F9 /* YMAAnimatedRoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMAAnimatedRoadViewController.swift; sourceTree = "<group>"; };
+		987B78BA1F95FF0400B8EE95 /* YMAJalousieEffectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMAJalousieEffectViewController.swift; sourceTree = "<group>"; };
+		987B78BD1F95FFF100B8EE95 /* iphonex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphonex.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				985AF60D1F923B0F008B5F25 /* AppDelegate.swift */,
-				985AF60F1F923B0F008B5F25 /* ViewController.swift */,
+				985AF61F1F923E85008B5F25 /* YMAPlanetsViewController.swift */,
+				987792841F94FFA500A800F9 /* YMARunningTextViewController.swift */,
+				987792861F95088300A800F9 /* YMAScaleCartButtonViewController.swift */,
 				985AF6111F923B0F008B5F25 /* Main.storyboard */,
+				9877928A1F95146600A800F9 /* YMAAnimatedRoadViewController.swift */,
+				987B78BA1F95FF0400B8EE95 /* YMAJalousieEffectViewController.swift */,
 				985AF6141F923B0F008B5F25 /* Assets.xcassets */,
+				987B78BD1F95FFF100B8EE95 /* iphonex.png */,
 				985AF6161F923B0F008B5F25 /* LaunchScreen.storyboard */,
 				985AF6191F923B0F008B5F25 /* Info.plist */,
 			);
@@ -90,6 +105,7 @@
 		985AF6021F923B0F008B5F25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YMA;
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Mikhail Yaskou";
@@ -136,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				985AF6101F923B0F008B5F25 /* ViewController.swift in Sources */,
+				987B78BE1F9610D600B8EE95 /* iphonex.png in Sources */,
+				9877928B1F95146600A800F9 /* YMAAnimatedRoadViewController.swift in Sources */,
+				987B78BB1F95FF0400B8EE95 /* YMAJalousieEffectViewController.swift in Sources */,
+				985AF6201F923E85008B5F25 /* YMAPlanetsViewController.swift in Sources */,
+				987792871F95088300A800F9 /* YMAScaleCartButtonViewController.swift in Sources */,
+				987792851F94FFA500A800F9 /* YMARunningTextViewController.swift in Sources */,
 				985AF60E1F923B0F008B5F25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
