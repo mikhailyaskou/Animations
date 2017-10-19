@@ -1,24 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tUR-nf-nuZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Бегущая строка-->
+        <scene sceneID="FUZ-Ad-IOs">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="EAF-BA-lZu" customClass="YMARunningTextViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdk-No-QVA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="p6z-dQ-oW5"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Бегущая строка" id="G38-Vk-vbw"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBu-J7-I5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="86" y="112"/>
+        </scene>
+        <!--Планеты-->
+        <scene sceneID="Zbh-va-Hjt">
+            <objects>
+                <viewController id="b1c-dg-E2V" customClass="YMAPlanetsViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzy-uj-Vhw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="abu-U7-1FJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Планеты" id="Vnf-w4-7o4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DB-Ew-I2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-549"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QCh-Lz-tWs">
+            <objects>
+                <tabBarController id="tUR-nf-nuZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t63-4k-Lnw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="b1c-dg-E2V" kind="relationship" relationship="viewControllers" id="EAe-HQ-gyi"/>
+                        <segue destination="EAF-BA-lZu" kind="relationship" relationship="viewControllers" id="DWO-ee-F4w"/>
+                        <segue destination="wZc-A4-gzo" kind="relationship" relationship="viewControllers" id="H9I-v3-AKG"/>
+                        <segue destination="BbR-kU-rOW" kind="relationship" relationship="viewControllers" id="cmg-my-5L6"/>
+                        <segue destination="SpM-G1-6vU" kind="relationship" relationship="viewControllers" id="oCg-aO-3mU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaH-BK-Gsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-865" y="-216"/>
+        </scene>
+        <!--Scale button-->
+        <scene sceneID="TTl-LK-Zwy">
+            <objects>
+                <viewController id="wZc-A4-gzo" customClass="YMAScaleCartButtonViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B2B-fW-q9d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="6Yh-xm-kj8">
+                                <rect key="frame" x="214" y="472" width="161" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-f2-ZdX">
+                                <rect key="frame" x="40" y="36" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="item"/>
+                                <connections>
+                                    <action selector="itemTapped:" destination="wZc-A4-gzo" eventType="touchUpInside" id="WVh-Dq-sMS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Na8-FP-WIb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scale button" id="W3N-gn-ysS"/>
+                    <connections>
+                        <outlet property="cart" destination="6Yh-xm-kj8" id="j54-ya-ut6"/>
+                        <outlet property="item" destination="Xim-f2-ZdX" id="Pqa-sD-Jhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cla-8j-jJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="802.848575712144"/>
+        </scene>
+        <!--Race track-->
+        <scene sceneID="BcZ-80-EVF">
+            <objects>
+                <viewController id="BbR-kU-rOW" customClass="YMAAnimatedRoadViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GD0-an-aIx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HId-Ky-7Cg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Race track" id="hgg-vf-sRz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5V-uX-KEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711" y="803"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="39J-vQ-b3W">
+            <objects>
+                <viewController id="SpM-G1-6vU" customClass="YMAJalousieEffectViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsi-i9-p6S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="O0f-wF-Oll"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" selectedImage="Жалюзи" id="tsx-5A-HHw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="juF-hd-eOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1511.2" y="802.848575712144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cart" width="200" height="200"/>
+        <image name="item" width="256" height="256"/>
+        <image name="Жалюзи" width="16" height="16"/>
+    </resources>
 </document>
